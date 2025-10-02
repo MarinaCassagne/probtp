@@ -5,10 +5,15 @@ img {
   margin: 1%;
 }
 
-ul {
-  list-style: none;
+table img {
+  width: 12%;
+  height: 12%;
 }
 
 body {
   margin: 2%;
+}
+
+a {
+  text-decoration-none
 }

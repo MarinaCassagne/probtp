@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -14,261 +15,299 @@
     <title>probtp</title>
   </head>
 
-  <body class="container">
-    <header>
-      <a href=""
-        >MON COMPTE<img
+  <body class="container-fluid">
+    <header class="row">
+      <p class="col-2 text-start">
+        MON COMPTE<img
           src="https://img.icons8.com/carbon-copy/100/lock--v1.png"
           alt="lock--v1"
-      /></a>
+        />
+      </p>
 
-      <article>
+      <article class="col-6 text-center">
         <img
           src="https://img.icons8.com/carbon-copy/100/general-warning-sign.png"
           alt="general-warning-sign"
         />Derniers jours pour votre DNAS !
       </article>
 
-      <div>
-        <ul>
-          <li>
-            <a href="mailto:"
-              ><img
-                src="https://img.icons8.com/carbon-copy/100/new-post--v1.png"
-                alt="new-post--v1"
-              />Messagerie (2)</a
-            >
-          </li>
+      <div class="col-4 text-end">
+        <a href="mailto:"
+          ><img
+            src="https://img.icons8.com/carbon-copy/100/new-post--v1.png"
+            alt="new-post--v1"
+          />Messagerie (2)</a
+        >
 
-          <li>
-            <a href="signOut.html"
-              >Déconnexion
-              <img src="https://img.icons8.com/carbon-copy/100/x.png" alt="x"
-            /></a>
-          </li>
-        </ul>
+        <a class="border border-3 border-dark" href="signOut.html"
+          >Déconnexion
+          <img src="https://img.icons8.com/carbon-copy/100/x.png" alt="x"
+        /></a>
 
-        <article class="Header-ES">Entreprise XXXXXXXXX | N° Siret</article>
+        <article class="small">
+          <small>Entreprise XXXXXXXXX | N° Siret</small>
+        </article>
       </div>
     </header>
 
     <nav>
-      <ul>
-        <li>
+      <ul class="list-inline list-unstyled">
+        <li class="list-inline-item">
           <img
             src="https://img.icons8.com/carbon-copy/100/home-page.png"
             alt="home-page"
           />
         </li>
-        <li><a href="">MES INFOS</a></li>
-        <li><a href="">MES AUTORISATIONS D'ACCÉS</a></li>
-        <li><a href="">MES SALARIÉS</a></li>
-        <li><a href="">MES COTISATIONS</a></li>
-        <li><a href="">MES CONTRATS</a></li>
-        <li><a href="">MES OPÉRATIONS</a></li>
+        <li class="list-inline-item px-4">
+          <a href="">MES INFOS</a>
+        </li>
+        <li class="list-inline-item px-4">
+          <a href="">MES AUTORISATIONS D'ACCÉS</a>
+        </li>
+        <li class="list-inline-item px-4"><a href="">MES SALARIÉS</a></li>
+        <li class="list-inline-item px-4"><a href="">MES COTISATIONS</a></li>
+        <li class="list-inline-item px-4"><a href="">MES CONTRATS</a></li>
+        <li class="list-inline-item px-4"><a href="">MES OPÉRATIONS</a></li>
       </ul>
     </nav>
 
-    <main>
-      <div>
-        <h1>Bienvenue Entreprise XXXXXXXXXXXX</h1>
-        <article>
+    <main class="m-4">
+      <div class="row">
+        <h1 class="col-6 fs-3">Bienvenue Entreprise XXXXXXXXXXXX</h1>
+        <article class="col-6">
           Dernière connexion : le
           <time datetime="10/03/2014">10/03/2014</time> à
           <time datetime="14:08">14:08</time>
         </article>
       </div>
-
-      <section>
-        <h2>
-          <img
-            src="https://img.icons8.com/carbon-copy/100/pin3.png"
-            alt="pin3"
-          />Coordonnées
-        </h2>
-        <ul>
-          <li>
+      <div class="row">
+        <section class="col-6 border border-4 border-dark">
+          <h2>
             <img
-              src="https://img.icons8.com/carbon-copy/100/company.png"
-              alt="company"
-            /><b>SIRET </b>: 000000000000000
-          </li>
-          <li>
-            <img
-              src="https://img.icons8.com/carbon-copy/100/order-delivered.png"
-              alt="order-delivered"
-            /><b>Adresse </b>: 298 boulevard Voltaire <br />
-            <span>75002 PARIS</span>
-          </li>
-
-          <li>
-            <img
-              src="https://img.icons8.com/carbon-copy/100/phone.png"
-              alt="phone"
-            /><b>Téléphone </b>: 02 02 02 02 02
-          </li>
-          <li>
-            <img
-              src="https://img.icons8.com/carbon-copy/100/new-post--v1.png"
-              alt="new-post--v1"
-            /><b>Adresse mail </b>:
-            <a href="mailto:xxxxxxxx.paris@gmail.com"
-              >xxxxxxxx.paris@gmail.com</a
-            >
-          </li>
-        </ul>
-      </section>
-
-      <section>
-        <article>
-          <img
-            src="https://img.icons8.com/carbon-copy/100/general-warning-sign.png"
-            alt="general-warning-sign"
-          />
-          <h2>Urgent</h2>
-          <p>
-            Il ne vous reste que <b>3 jours</b> pour remplir la déclaration
-            nominative annuelle des salaires (DNAS). Pour faire votre
-            déclaration, <a href="">cliquez ici</a>.
-          </p>
-        </article>
-
-        <section>
-          <h2>Messagerie</h2>
-          <a href="mailto:"
-            ><img
-              src="https://img.icons8.com/carbon-copy/100/apple-mail.png"
-              alt="apple-mail"
-            />Vous avez 2 message non-lus</a
-          >
-        </section>
-
-        <section>
-          <h2>Contact PRO BTP</h2>
-          <ul>
+              src="https://img.icons8.com/carbon-copy/100/pin3.png"
+              alt="pin3"
+            />Coordonnées
+          </h2>
+          <ul class="list-unstyled">
             <li>
               <img
-                src="https://img.icons8.com/carbon-copy/100/gender-neutral-user.png"
-                alt="gender-neutral-user"
-              />Votre conseiller : JEAN DUPONT
+                src="https://img.icons8.com/carbon-copy/100/company.png"
+                alt="company"
+              /><b>SIRET </b>: 000000000000000
             </li>
+            <li>
+              <img
+                src="https://img.icons8.com/carbon-copy/100/order-delivered.png"
+                alt="order-delivered"
+              /><b>Adresse </b>: 298 boulevard Voltaire <br />
+              <span>75002 PARIS</span>
+            </li>
+
             <li>
               <img
                 src="https://img.icons8.com/carbon-copy/100/phone.png"
                 alt="phone"
-              />04 04 04 04 04
+              /><b>Téléphone </b>: 02 02 02 02 02
             </li>
             <li>
               <img
                 src="https://img.icons8.com/carbon-copy/100/new-post--v1.png"
                 alt="new-post--v1"
-              />Envoyer un e-mail à mon conseiller
+              /><b>Adresse mail </b>:
+              <a href="mailto:xxxxxxxx.paris@gmail.com"
+                >xxxxxxxx.paris@gmail.com</a
+              >
             </li>
           </ul>
         </section>
-      </section>
 
-      <section>
-        <h2>
-          <img
-            src="https://img.icons8.com/carbon-copy/100/flag.png"
-            alt="flag"
-          />Dernières opérations
-        </h2>
-        <table>
-          <tr>
-            <th scope="col">Date</th>
-            <th scope="col">Objet</th>
-            <th scope="col">Numéro d'opération</th>
-            <th scope="col">Auteur</th>
-            <th scope="col">État</th>
-          </tr>
-          <tr>
-            <td>08/03/2014</td>
-            <td>Mise à jour</td>
-            <td>17</td>
-            <td>Profil2</td>
-            <td>Brouillon</td>
-          </tr>
-          <tr>
-            <td>28/02/2014</td>
-            <td>Affiliation</td>
-            <td>16</td>
-            <td>Profil1</td>
-            <td>Brouillon</td>
-          </tr>
-          <tr>
-            <td>27/02/2014</td>
-            <td>Mise à jour</td>
-            <td>15</td>
-            <td>ADMIN</td>
-            <td>Validé</td>
-          </tr>
-          <tr>
-            <td>25/02/2014</td>
-            <td>Mise à jour</td>
-            <td>14</td>
-            <td>Profil1</td>
-            <td>Validé</td>
-          </tr>
-          <tr>
-            <td>10/02/2014</td>
-            <td>DNAS</td>
-            <td>13</td>
-            <td>ADMIN</td>
-            <td>Validé</td>
-          </tr>
-          <tr>
-            <td>23/01/2014</td>
-            <td>Arrêt de travail</td>
-            <td>12</td>
-            <td>Profil2</td>
-            <td>Validé</td>
-          </tr>
-        </table>
-      </section>
+        <section class="col-6">
+          <article class="row border border-4 border-dark rounded">
+            <h2 class="col-2 fs-4 text-center">
+              <img
+                src="https://img.icons8.com/carbon-copy/100/general-warning-sign.png"
+                alt="general-warning-sign"
+              />
+              Urgent
+            </h2>
+            <p class="col-10">
+              Il ne vous reste que <b>3 jours</b> pour remplir la déclaration
+              nominative annuelle des salaires (DNAS). Pour faire votre
+              déclaration, <a href="">cliquez ici</a>.
+            </p>
+          </article>
 
-      <section>
-        <h2>
-          <img
-            src="https://img.icons8.com/carbon-copy/100/quick-mode-on.png"
-            alt="quick-mode-on"
-          />Important
-        </h2>
-        <ul>
-          <li>
+          <div class="row">
+            <section class="col-4 border border-4 border-dark">
+              <h2>Messagerie</h2>
+              <a href="mailto:"
+                ><img
+                  src="https://img.icons8.com/carbon-copy/100/apple-mail.png"
+                  alt="apple-mail"
+                />Vous avez 2 message non-lus</a
+              >
+            </section>
+
+            <section class="col-8 border border-4 border-dark">
+              <h2>Contact PRO BTP</h2>
+              <ul class="list-unstyled">
+                <li>
+                  <img
+                    src="https://img.icons8.com/carbon-copy/100/gender-neutral-user.png"
+                    alt="gender-neutral-user"
+                  />Votre conseiller : JEAN DUPONT
+                </li>
+                <li>
+                  <img
+                    src="https://img.icons8.com/carbon-copy/100/phone.png"
+                    alt="phone"
+                  />04 04 04 04 04
+                </li>
+                <li>
+                  <img
+                    src="https://img.icons8.com/carbon-copy/100/new-post--v1.png"
+                    alt="new-post--v1"
+                  />Envoyer un e-mail à mon conseiller
+                </li>
+              </ul>
+            </section>
+          </div>
+        </section>
+      </div>
+
+      <div class="row">
+        <section class="col-6 border border-4 border-dark">
+          <h2>
             <img
-              src="https://img.icons8.com/carbon-copy/100/play.png"
-              alt="play"
-            />
-            <b>Nouveau</b> : paiement des cotisations par chèque ou par
-            prélèvement à l'échéance, c'est vous qui choisissez
-          </li>
-          <li>
+              src="https://img.icons8.com/carbon-copy/100/flag.png"
+              alt="flag"
+            />Dernières opérations
+          </h2>
+          <table class="border table table-striped text-start">
+            <tr class="border table-secondary">
+              <th scope="col">Date</th>
+              <th scope="col">Objet</th>
+              <th class="text-center" scope="col">Numéro d'opération</th>
+              <th scope="col">Auteur</th>
+              <th scope="col">État</th>
+            </tr>
+            <tr>
+              <td>08/03/2014</td>
+              <td>Mise à jour</td>
+              <td class="text-center">17</td>
+              <td>Profil2</td>
+              <td>
+                Brouillon<img
+                  src="https://img.icons8.com/carbon-copy/100/settings.png"
+                  alt="settings"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>28/02/2014</td>
+              <td>Affiliation</td>
+              <td class="text-center">16</td>
+              <td>Profil1</td>
+              <td>
+                Brouillon<img
+                  src="https://img.icons8.com/carbon-copy/100/settings.png"
+                  alt="settings"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>27/02/2014</td>
+              <td>Mise à jour</td>
+              <td class="text-center">15</td>
+              <td>ADMIN</td>
+              <td>
+                Validé<img
+                  src="https://img.icons8.com/carbon-copy/100/checkmark--v1.png"
+                  alt="checkmark--v1"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>25/02/2014</td>
+              <td>Mise à jour</td>
+              <td class="text-center">14</td>
+              <td>Profil1</td>
+              <td>
+                Validé<img
+                  src="https://img.icons8.com/carbon-copy/100/checkmark--v1.png"
+                  alt="checkmark--v1"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>10/02/2014</td>
+              <td>DNAS</td>
+              <td class="text-center">13</td>
+              <td>ADMIN</td>
+              <td>
+                Validé<img
+                  src="https://img.icons8.com/carbon-copy/100/checkmark--v1.png"
+                  alt="checkmark--v1"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>23/01/2014</td>
+              <td>Arrêt de travail</td>
+              <td class="text-center">12</td>
+              <td>Profil2</td>
+              <td>
+                Validé<img
+                  src="https://img.icons8.com/carbon-copy/100/checkmark--v1.png"
+                  alt="checkmark--v1"
+                />
+              </td>
+            </tr>
+          </table>
+        </section>
+
+        <section class="col-6 border border-4 border-dark">
+          <h2>
             <img
-              src="https://img.icons8.com/carbon-copy/100/play.png"
-              alt="play"
-            />
-            <b>Arrêt de travail > 90 jours</b> :
-            <a href="">ce qui change au 1er janvier 2014</a>
-          </li>
-          <li>
-            <img
-              src="https://img.icons8.com/carbon-copy/100/play.png"
-              alt="play"
-            />
-            <b>Exonération sociales et fiscales</b> :
-            <a href="">conformité des contrats prévoyance / frais de santé</a>
-          </li>
-          <li>
-            <img
-              src="https://img.icons8.com/carbon-copy/100/play.png"
-              alt="play"
-            />
-            <b><a href="">Inscrivez-vous</a></b> au télépaiement
-          </li>
-        </ul>
-      </section>
+              src="https://img.icons8.com/carbon-copy/100/quick-mode-on.png"
+              alt="quick-mode-on"
+            />Important
+          </h2>
+          <ul class="list-unstyled">
+            <li>
+              <img
+                src="https://img.icons8.com/carbon-copy/100/play.png"
+                alt="play"
+              />
+              <b>Nouveau</b> : paiement des cotisations par chèque ou par
+              prélèvement à l'échéance, c'est vous qui choisissez
+            </li>
+            <li>
+              <img
+                src="https://img.icons8.com/carbon-copy/100/play.png"
+                alt="play"
+              />
+              <b>Arrêt de travail > 90 jours</b> :
+              <a href="">ce qui change au 1er janvier 2014</a>
+            </li>
+            <li>
+              <img
+                src="https://img.icons8.com/carbon-copy/100/play.png"
+                alt="play"
+              />
+              <b>Exonération sociales et fiscales</b> :
+              <a href="">conformité des contrats prévoyance / frais de santé</a>
+            </li>
+            <li>
+              <img
+                src="https://img.icons8.com/carbon-copy/100/play.png"
+                alt="play"
+              />
+              <b><a href="">Inscrivez-vous</a></b> au télépaiement
+            </li>
+          </ul>
+        </section>
+      </div>
     </main>
   </body>
 </html>
